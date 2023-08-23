@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-st.set_page_config(page_title = "HRMIS-V", page_icon=":bar_chart:",layout="wide")
+st.set_page_config(page_title = "PSDP - 2023-24", page_icon=":bar_chart:",layout="wide")
 
 
 hide_st_style = """
