@@ -102,7 +102,7 @@ with left_column:
     st.pyplot(fig1 )
 
 with right_column:
-    labels = 'Relesed Budget','Expenditure'
+    labels = 'Released Budget','Expenditure'
     expenditure_percentage = (total_expenditure / released_budget) * 100
     sizes = [100 - expenditure_percentage, expenditure_percentage]  # Calculate the remaining budget percentage
     explode = (0,0.1)
@@ -138,7 +138,7 @@ for i, val in enumerate(df['Expenditure'].values):
     plt.text(i, val, int(val), horizontalalignment='center', verticalalignment='bottom', fontdict={'fontweight': 500, 'size': 12})
 # Decoration
 plt.gca().set_xticklabels(df['head'], rotation=60, horizontalalignment='right')
-plt.title("Release " + str(option) + " (Head Wise)", fontsize=22 , pad=40)
+plt.title("Expenditure " + str(option) + " (Head-Wise)", fontsize=22 , pad=40)
 #plt.ylim(0, df['Expenditure'].max() + 50)
 plt.ylim(0, df['Expenditure'].max() + 500) 
 st.pyplot(plt)
