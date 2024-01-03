@@ -51,9 +51,9 @@ def app():
     df = pd.read_excel(
         io="psdp.xlsx",
         engine='openpyxl',
-        sheet_name='finalmohr',
+        sheet_name='mohr',
         skiprows=0,
-        usecols='A:E',
+        usecols='A:H',
         nrows=50000,
     )
      
