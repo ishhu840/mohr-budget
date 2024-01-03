@@ -160,7 +160,7 @@ def app():
 
             # Modify the DataFrame for display
             projects_below_70_df_display = projects_below_70_df.copy()
-            projects_below_70_df_display['Release'] = projects_below_70_df['Release'].apply(lambda x: f"{x:.2f} ")
+            projects_below_70_df_display['Release'] = projects_below_70_df['Release Budget'].apply(lambda x: f"{x:.2f} ")
             projects_below_70_df_display['Expenditure'] = projects_below_70_df['Expenditure'].apply(lambda x: f"{x:.2f} ")
             projects_below_70_df_display['Percentage'] = projects_below_70_df['Percentage'].astype(str) + '%'
 
