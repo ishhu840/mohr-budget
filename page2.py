@@ -53,7 +53,7 @@ def app():
         engine='openpyxl',
         sheet_name='mohr',
         skiprows=0,
-        usecols='A:H',
+        usecols='A:L',
         nrows=50000,
     )
      
